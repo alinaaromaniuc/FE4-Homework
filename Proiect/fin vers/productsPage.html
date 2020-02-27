@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, ,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <!-- Font Awesome CDN-->
+    <!--Sec car-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <!--Sec filter-->
+
+    <!--CustomStylesheet-->
+    <link rel="stylesheet" href="./main.css" />
+    <!---->
+
+    <!--footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    -->
+    <!--buton card-->
+
+
+    <title>Products proiect</title>
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section,
+        main {
+            display: block;
+        }
+        
+        body,
+        * {
+            font-family: MuseoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+        }
+        
+        blockquote,
+        q {
+            quotes: none;
+        }
+        
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        a,
+        a:active,
+        a:focus {
+            outline: none;
+        }
+        /* --------------------------------
+
+Additional Styles
+
+-------------------------------- */
+        
+        *,
+        *::after,
+        *::before {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        html * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        a {
+            color: #f03d6c;
+            text-decoration: none;
+        }
+        /* --------------------------------
+
+Main Components
+
+-------------------------------- */
+        
+        .cd-header {
+            position: relative;
+            height: 150px;
+            background-color: #70e5cd;
+        }
+        
+        .cd-header h1 {
+            color: #ffffff;
+            line-height: 150px;
+            text-align: center;
+        }
+        
+        @media only screen and (min-width: 1170px) {
+            .cd-header {
+                height: 180px;
+            }
+            .cd-header h1 {
+                line-height: 180px;
+            }
+        }
+        
+        .cd-main-content {
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        .cd-main-content:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .cd-main-content.is-fixed .cd-tab-filter-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        
+        .cd-main-content.is-fixed .cd-gallery {
+            padding-top: 76px;
+        }
+        
+        .cd-main-content.is-fixed .cd-filter {
+            position: fixed;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .cd-main-content.is-fixed .cd-filter form {
+            height: 100vh;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .cd-main-content.is-fixed .cd-filter-trigger {
+            position: fixed;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .cd-main-content.is-fixed .cd-gallery {
+                padding-top: 90px;
+            }
+        }
+        
+        @media only screen and (min-width: 1170px) {
+            .cd-main-content.is-fixed .cd-gallery {
+                padding-top: 100px;
+            }
+        }
+        /* --------------------------------
+
+xtab-filter
+
+-------------------------------- */
+        
+        .cd-tab-filter-wrapper {
+            background-color: #ffffff;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+            z-index: 1;
+        }
+        
+        .cd-tab-filter-wrapper:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .cd-tab-filter {
+            /* tabbed navigation style on mobile - dropdown */
+            position: relative;
+            height: 50px;
+            width: 140px;
+            margin: 0 auto;
+            z-index: 1;
+        }
+        
+        .cd-tab-filter::after {
+            /* small arrow icon */
+            content: '';
+            position: absolute;
+            right: 14px;
+            top: 50%;
+            bottom: auto;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url("https://entrusters.com/templates/yoo_moustache/html/com_entrusters_shop/products/ui-img/cd-icon-arrow.svg") no-repeat center center;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            pointer-events: none;
+        }
+        
+        .cd-tab-filter ul {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            box-shadow: inset 0 -2px 0 #f03d6c;
+        }
+        
+        .cd-tab-filter li {
+            display: none;
+        }
+        
+        .cd-tab-filter li:first-child {
+            /* this way the placehodler is alway visible */
+            display: block;
+        }
+        
+        .cd-tab-filter a {
+            display: block;
+            /* set same size of the .cd-tab-filter */
+            height: 50px;
+            width: 140px;
+            line-height: 50px;
+            padding-left: 14px;
+        }
+        
+        .cd-tab-filter a.selected {
+            background: #f03d6c;
+            color: #ffffff;
+        }
+        
+        .cd-tab-filter.is-open::after {
+            /* small arrow rotation */
+            -webkit-transform: translateY(-50%) rotate(-180deg);
+            -moz-transform: translateY(-50%) rotate(-180deg);
+            -ms-transform: translateY(-50%) rotate(-180deg);
+            -o-transform: translateY(-50%) rotate(-180deg);
+            transform: translateY(-50%) rotate(-180deg);
+        }
+        
+        .cd-tab-filter.is-open ul {
+            box-shadow: inset 0 -2px 0 #f03d6c, 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cd-tab-filter.is-open ul li {
+            display: block;
+        }
+        
+        .cd-tab-filter.is-open .placeholder a {
+            /* reduces the opacity of the placeholder on mobile when the menu is open */
+            opacity: .4;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .cd-tab-filter {
+                /* tabbed navigation style on medium devices */
+                width: auto;
+                cursor: auto;
+            }
+            .cd-tab-filter::after {
+                /* hide the arrow */
+                display: none;
+            }
+            .cd-tab-filter ul {
+                background: transparent;
+                position: static;
+                box-shadow: none;
+                text-align: center;
+            }
+            .cd-tab-filter li {
+                display: inline-block;
+            }
+            .cd-tab-filter li.placeholder {
+                display: none !important;
+            }
+            .cd-tab-filter a {
+                display: inline-block;
+                padding: 0 1em;
+                width: auto;
+                color: #9a9a9a;
+                text-transform: uppercase;
+            }
+            .no-touch .cd-tab-filter a:hover {
+                color: #f03d6c;
+            }
+            .cd-tab-filter a.selected {
+                background: transparent;
+                color: #f03d6c;
+                /* create border bottom using box-shadow property */
+                box-shadow: inset 0 -2px 0 #f03d6c;
+            }
+            .cd-tab-filter.is-open ul li {
+                display: inline-block;
+            }
+        }
+        
+        @media only screen and (min-width: 1170px) {
+            .cd-tab-filter {
+                /* tabbed navigation on big devices */
+                width: 100%;
+                float: right;
+                margin: 0;
+                -webkit-transition: width 0.3s;
+                -moz-transition: width 0.3s;
+                transition: width 0.3s;
+            }
+            .cd-tab-filter.filter-is-visible {
+                /* reduce width when filter is visible */
+                width: 80%;
+            }
+        }
+        /* --------------------------------
+
+xgallery
+
+-------------------------------- */
+        
+        .cd-gallery {
+            padding: 26px 5%;
+            width: 100%;
+        }
+        
+        .cd-gallery li {
+            margin-bottom: 1.6em;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+        
+        .cd-gallery li.gap {
+            /* used in combination with text-align: justify to align gallery elements */
+            opacity: 0;
+            height: 0;
+            display: inline-block;
+        }
+        
+        .cd-gallery img {
+            display: block;
+            width: 100%;
+        }
+        
+        .cd-gallery .cd-fail-message {
+            display: none;
+            text-align: center;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .cd-gallery {
+                padding: 40px 3%;
+            }
+            .cd-gallery ul {
+                text-align: justify;
+            }
+            .cd-gallery ul:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .cd-gallery li {
+                width: 48%;
+                margin-bottom: 2em;
+            }
+        }
+        
+        @media only screen and (min-width: 1170px) {
+            .cd-gallery {
+                padding: 50px 2%;
+                float: right;
+                -webkit-transition: width 0.3s;
+                -moz-transition: width 0.3s;
+                transition: width 0.3s;
+            }
+            .cd-gallery li {
+                width: 23%;
+            }
+            .cd-gallery.filter-is-visible {
+                /* reduce width when filter is visible */
+                width: 80%;
+            }
+        }
+        /* --------------------------------
+
+xfilter
+
+-------------------------------- */
+        
+        .cd-filter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 280px;
+            height: 100%;
+            background: #ffffff;
+            box-shadow: 4px 4px 20px transparent;
+            z-index: 2;
+            /* Force Hardware Acceleration in WebKit */
+            -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform: translateX(-100%);
+            -moz-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+            -o-transform: translateX(-100%);
+            transform: translateX(-100%);
+            -webkit-transition: -webkit-transform 0.3s, box-shadow 0.3s;
+            -moz-transition: -moz-transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cd-filter::before {
+            /* top colored bar */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 50px;
+            width: 100%;
+            background-color: #444444;
+            z-index: 2;
+        }
+        
+        .cd-filter form {
+            padding: 70px 20px;
+        }
+        
+        .cd-filter .cd-close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 50px;
+            line-height: 50px;
+            width: 60px;
+            color: #ffffff;
+            text-align: center;
+            background: #444444;
+            opacity: 0;
+            -webkit-transition: opacity 0.3s;
+            -moz-transition: opacity 0.3s;
+            transition: opacity 0.3s;
+            z-index: 3;
+        }
+        
+        .no-touch .cd-filter .cd-close:hover {
+            background: #666666;
+        }
+        
+        .cd-filter.filter-is-visible {
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -ms-transform: translateX(0);
+            -o-transform: translateX(0);
+            transform: translateX(0);
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cd-filter.filter-is-visible .cd-close {
+            opacity: 1;
+        }
+        
+        @media only screen and (min-width: 1170px) {
+            .cd-filter {
+                width: 20%;
+            }
+            .cd-filter form {
+                padding: 70px 10%;
+            }
+        }
+        
+        .cd-filter-trigger {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 50px;
+            line-height: 50px;
+            width: 60px;
+            /* image replacement */
+            overflow: hidden;
+            text-indent: 100%;
+            color: transparent;
+            white-space: nowrap;
+            background: transparent url("https://entrusters.com/templates/yoo_moustache/html/com_entrusters_shop/products/ui-img/cd-icon-filter.svg") no-repeat center center;
+            z-index: 3;
+        }
+        
+        .cd-filter-trigger.filter-is-visible {
+            pointer-events: none;
+        }
+        
+        @media only screen and (min-width: 1170px) {
+            .cd-filter-trigger {
+                width: auto;
+                left: 2%;
+                text-indent: 0;
+                color: #9a9a9a;
+                text-transform: uppercase;
+                padding-left: 24px;
+                background-position: left center;
+                -webkit-transition: color 0.3s;
+                -moz-transition: color 0.3s;
+                transition: color 0.3s;
+            }
+            .no-touch .cd-filter-trigger:hover {
+                color: #f03d6c;
+            }
+            .cd-filter-trigger.filter-is-visible,
+            .cd-filter-trigger.filter-is-visible:hover {
+                color: #ffffff;
+            }
+        }
+        /* --------------------------------
+
+xcustom form elements
+
+-------------------------------- */
+        
+        .cd-filter-block {
+            margin-bottom: 1.6em;
+        }
+        
+        .cd-filter-block h4 {
+            /* filter block title */
+            position: relative;
+            margin-bottom: .2em;
+            padding: 10px 0 10px 20px;
+            color: #9a9a9a;
+            text-transform: uppercase;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: pointer;
+        }
+        
+        .no-touch .cd-filter-block h4:hover {
+            color: #f03d6c;
+        }
+        
+        .cd-filter-block h4::before {
+            /* arrow */
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 16px;
+            height: 16px;
+            background: url("https://entrusters.com/templates/yoo_moustache/html/com_entrusters_shop/products/ui-img/cd-icon-arrow.svg") no-repeat center center;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            -webkit-transition: -webkit-transform 0.3s;
+            -moz-transition: -moz-transform 0.3s;
+            transition: transform 0.3s;
+        }
+        
+        .cd-filter-block h4.closed::before {
+            -webkit-transform: translateY(-50%) rotate(-90deg);
+            -moz-transform: translateY(-50%) rotate(-90deg);
+            -ms-transform: translateY(-50%) rotate(-90deg);
+            -o-transform: translateY(-50%) rotate(-90deg);
+            transform: translateY(-50%) rotate(-90deg);
+        }
+        
+        .cd-filter-block input,
+        .cd-filter-block select,
+        .cd-filter-block .radio-label::before,
+        .cd-filter-block .checkbox-label::before {
+            /* shared style for input elements */
+            border-radius: 0;
+            background-color: #ffffff;
+            border: 2px solid #e6e6e6;
+        }
+        
+        .cd-filter-block input[type='search'],
+        .cd-filter-block input[type='text'],
+        .cd-filter-block select {
+            width: 100%;
+            padding: .8em;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            -o-appearance: none;
+            appearance: none;
+            box-shadow: none;
+        }
+        
+        .cd-filter-block input[type='search']:focus,
+        .cd-filter-block input[type='text']:focus,
+        .cd-filter-block select:focus {
+            outline: none;
+            background-color: #ffffff;
+            border-color: #f03d6c;
+        }
+        
+        .cd-filter-block input[type='search'] {
+            /* custom style for the search element */
+            border-color: transparent;
+            background-color: #e6e6e6;
+            /* prevent jump - ios devices */
+            font-size: 1rem !important;
+        }
+        
+        .cd-filter-block input[type='search']::-webkit-search-cancel-button {
+            display: none;
+        }
+        
+        .cd-filter-block .cd-select {
+            /* select element wrapper */
+            position: relative;
+        }
+        
+        .cd-filter-block .cd-select::after {
+            /* switcher arrow for select element */
+            content: '';
+            position: absolute;
+            z-index: 1;
+            right: 14px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            display: block;
+            width: 16px;
+            height: 16px;
+            background: url("https://entrusters.com/templates/yoo_moustache/html/com_entrusters_shop/products/ui-img/cd-icon-arrow.svg") no-repeat center center;
+            pointer-events: none;
+        }
+        
+        .cd-filter-block select {
+            cursor: pointer;
+        }
+        
+        .cd-filter-block select::-ms-expand {
+            display: none;
+        }
+        
+        .cd-filter-block .list li {
+            position: relative;
+            margin-bottom: .8em;
+        }
+        
+        .cd-filter-block .list li:last-of-type {
+            margin-bottom: 0;
+        }
+        
+        .cd-filter-block input[type=radio],
+        .cd-filter-block input[type=checkbox] {
+            /* hide original check and radio buttons */
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            z-index: 2;
+        }
+        
+        .cd-filter-block .checkbox-label,
+        .cd-filter-block .radio-label {
+            padding-left: 24px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        .cd-filter-block .checkbox-label::before,
+        .cd-filter-block .checkbox-label::after,
+        .cd-filter-block .radio-label::before,
+        .cd-filter-block .radio-label::after {
+            /* custom radio and check boxes */
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        
+        .cd-filter-block .checkbox-label::before,
+        .cd-filter-block .radio-label::before {
+            width: 16px;
+            height: 16px;
+            left: 0;
+        }
+        
+        .cd-filter-block .checkbox-label::after,
+        .cd-filter-block .radio-label::after {
+            /* check mark - hidden */
+            display: none;
+        }
+        
+        .cd-filter-block .checkbox-label::after {
+            /* check mark style for check boxes */
+            width: 16px;
+            height: 16px;
+            background: url("https://entrusters.com/templates/yoo_moustache/html/com_entrusters_shop/products/ui-img/cd-icon-check.svg") no-repeat center center;
+        }
+        
+        .cd-filter-block .radio-label::before,
+        .cd-filter-block .radio-label::after {
+            border-radius: 50%;
+        }
+        
+        .cd-filter-block .radio-label::after {
+            /* check mark style for radio buttons */
+            width: 6px;
+            height: 6px;
+            background-color: #ffffff;
+            left: 5px;
+        }
+        
+        .cd-filter-block input[type=radio]:checked+label::before,
+        .cd-filter-block input[type=checkbox]:checked+label::before {
+            border-color: #f03d6c;
+            background-color: #f03d6c;
+        }
+        
+        .cd-filter-block input[type=radio]:checked+label::after,
+        .cd-filter-block input[type=checkbox]:checked+label::after {
+            display: block;
+        }
+        
+        @-moz-document url-prefix() {
+            /* hide custom arrow on Firefox - select element */
+            .cd-filter-block .cd-select::after {
+                display: none;
+            }
+        }
+        /*final filtru bootstramp*/
+        
+        .wrap {
+            background: rgb(238, 240, 240);
+            min-height: 100px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+        }
+        
+        .search {
+            display: inline-flex;
+            text-align: center;
+        }
+        
+        .searchButton {
+            background-color: #4CAF50;
+            border-radius: 0%;
+            border: none;
+            color: white;
+            padding: 9px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            font-size: 13px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+        }
+        
+        .searchButton {
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .searchButton:hover {
+            background: rgb(97, 207, 100);
+            box-shadow: 0 22px 26px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        input,
+        button {
+            font-size: inherit;
+            padding: 0.2em;
+            margin: 0.1em 0.7em;
+        }
+        
+        input.searchTerm {
+            width: 350px;
+            height: 40px;
+        }
+        
+        .product-section {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        /* We tell all items to be 100% width, via flex-basis */
+        
+        .product-section>* {
+            flex: 1 100%;
+        }
+        /* We rely on source order for mobile-first approach
+ * in this case:
+ * 1. header
+ * 2. article
+ * 3. aside 1
+ * 4. aside 2
+ * 5. footer
+ */
+        /* Medium screens */
+        
+        @media all and (min-width: 600px) {
+            /* We tell both sidebars to share a row */
+            .aside {
+                flex: 1 auto;
+            }
+        }
+        /* Large screens */
+        
+        @media all and (min-width: 800px) {
+            /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+            .product-sort {
+                flex: 3 0px;
+            }
+            .aside-1 {
+                order: 1;
+                align-content: flex-start;
+                background: pink;
+            }
+            .product-sort {
+                order: 2;
+            }
+        }
+        
+        .product-place ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        /*style product card*/
+        
+        .card:hover {
+            box-shadow: 0 19px 19px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .wrapper {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            background-color: #fff;
+            color: #444;
+        }
+        
+        .box {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+        }
+        
+        .img {
+            height: auto;
+            max-height: 100px;
+            width: auto;
+            max-width: 100px;
+        }
+        
+        .wrapper>.user-card {
+            flex: 1 1 auto;
+            margin: 10px;
+        }
+        /* style hover cart*/
+        /*product section*/
+        
+        .wrapper button {
+            display: none;
+            /* Hide button */
+        }
+        
+        .divbutton button:hover {
+            display: block;
+            /* On :hover of div show button */
+        }
+        
+        .img-box img:hover a.btn {
+            background-color: #f37020;
+            text-decoration: none;
+            color: #fff;
+            background-image: none;
+        }
+        /*imagine hover buton*/
+        /* Container needed to position the button. Adjust the width as needed */
+        
+        .img-box {
+            position: relative;
+            width: 100%;
+        }
+        
+        .img {
+            height: auto;
+            max-height: 100px;
+            width: auto;
+            max-width: 100px;
+        }
+        /* Make the image responsive */
+        /* Style the button and place it in the middle of the container/image */
+        
+        .img-box .button1 {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            background: transparent;
+            color: transparent;
+        }
+        
+        .img-box:hover .button1 {
+            background-color: #4CAF50;
+            ;
+            color: white;
+        }
+        
+        .img-box .button2 {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            background: transparent;
+            color: transparent;
+        }
+        
+        .img-box:hover .button2 {
+            background-color: transparent;
+            border: solid 2px rgb(252, 165, 3);
+            color: white;
+        }
+        
+        .img-box .button1:hover {
+            background: rgb(73, 211, 78);
+            box-shadow: 0 22px 26px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .img-box .button2:hover {
+            background: rgb(236, 183, 83);
+            box-shadow: 0 22px 26px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+        /*dropdown*/
+        /*card section*/
+        
+        .show-cart li {
+            display: flex;
+        }
+        
+        .card {
+            margin-bottom: 20px;
+        }
+        
+        .card-img-top {
+            width: 200px;
+            height: 200px;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  ======================= Start Header Area ============================== -->
+    <header>
+        <div id="topBar" class="w3-bar w3-blue-gray ">
+            <a href="#" class="w3-bar-item w3-button w3-right "><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Your Cart</a>
+            <a href="signinPage.html" class="w3-bar-item w3-button w3-right"><i class="fa fa-fw fa-user"></i>  Login</a>
+            <a href="mainPage.html" class="w3-bar-item w3-button w3-right" class="active"><i class="fa fa-fw fa-home"></i>  Home</a>
+            <a src="#" alt="WatchesIcon" class="w3-bar-item w3-left" style="width:10px; height:10px left"> </a>
+
+    </header>
+
+    <div id="categoryBar" class="w3-bar w3-center w3-text-dark-grey">
+
+        <a href="#" id="categ" class="w3-bar-item w3-button  ">MEN'S</a>
+        <a href="#" id="categ" class="w3-bar-item w3-button  ">WOMEN'S</a>
+
+        <div class="dropdown">
+            <a href="#" id="categ" class="w3-bar-item w3-button brand-shop dropbtn">SHOP BY BRAND</a>
+            <div class="dropdown-content">
+
+                <a href="#"><strong>HULBOT</strong></a>
+                <a href="#"><strong>PATEK</strong></a>
+                <a href="#"><strong>VACHERON</strong></a>
+                <a href="#"><strong>ROLEX</strong></a>
+
+            </div>
+        </div>
+        <a href="#" id="categ" class="w3-bar-item w3-button ">ALL CATEGORIES</a>
+        <a href="#" id="categ" class="w3-bar-item w3-button ">SALE</a>
+
+    </div>
+    <!--  ======================= End Header Area ============================== -->
+    <!--Header search area-->
+    <div class="wrap ">
+        <div class="search">
+            <input type="text" id="search-box" class="form-control searchTerm " placeholder="What are you looking for? " />
+            <button type="submit" id="search-btn" class="btn btn-primary mb-2 searchButton">SEARCH</button>
+        </div>
+    </div>
+
+
+    <!--END Header search area-->
+    <section class="">
+        <div>
+
+        </div>
+    </section>
+
+
+    <!--filter bootstramp-->
+
+
+    <div class="container product-sect">
+        <div class="row" id="container"></div>
+
+        <ul class="pagination " id="pagination"></ul>
+    </div>
+
+
+    <!--  ===========END product Area================ -->
+    <!--cart area-->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end cart area-->
+    <!--Footer Line Button-->
+    <section>
+        <div class="line-footer ">
+            <div class="row ">
+                <h5>Start your 30-day free trial today. Cancel or upgrade anytime. </h5>
+                <div class="footer-bt-class ">
+                    <button id="footer-button " class="searchButton ">BUTTON LABEL</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--END Footer Line Button-->
+
+    <!-- Footer -->
+    <footer class="site-footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-12 col-md-6 ">
+                    <h6>About</h6>
+                    <p class="text-justify ">Watches.com Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure consectetur velit dolorem aut asperiores, accusamus nam cumque repellat nobis omnis temporibus corporis pariatur laudantium, distinctio odio magni veniam iusto
+                        tempore!
+                    </p>
+                </div>
+
+                <div class="col-xs-6 col-md-3 ">
+                    <h6>INFO</h6>
+                    <ul class="footer-links ">
+                        <li><a href="# ">Team</a></li>
+                        <li><a href="# ">Jobs</a></li>
+                        <li><a href="# ">Blog</a></li>
+                        <li><a href="# ">Press</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3 ">
+                    <h6>HELP</h6>
+                    <ul class="footer-links ">
+                        <li><a href="# ">FAQ</a></li>
+                        <li><a href="# ">Security</a></li>
+                        <li><a href="# ">Terms of Service</a></li>
+                        <li><a href="# ">Privacy policy</a></li>
+                        <li><a href="# ">Android</a></li>
+                        <li><a href="# ">Templates</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+
+        </div>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-8 col-sm-6 col-xs-12 ">
+                    <p class="copyright-text "> &copy; 2020 The Website, Inc.
+
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 ">
+                    <ul class="social-icons ">
+                        <li><a class="facebook " href="https://www.facebook.com "><i class="fab fa-facebook-f "></i></a></li>
+                        <li><a class="youtube " href="https://www.youtube.com "><i class="fab fa-youtube "></i></a></li>
+                        <li><a class="twitter " href="https://twitter.com "><i class="fab fa-twitter "></i></a></li>
+                        <li><a class="instagram " href="https://www.instagram.com "><i class="fab fa-instagram "></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--ENd footer area-->
+
+    <!-- Slick carousel-->
+    <!-- <script type="text/javascript " src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script> -->
+    <!-- Custom Script-->
+    <script src="./productJS.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script src="http://kit.fontawesome.com/23412c6a8d.js "></script>
+
+    <!--Section filter-->
+    <!---->
+    <script type="text/javascript ">
+        $(document).ready(function() {
+            $(".wish-icon i ").click(function() {
+                $(this).toggleClass("fa-heart fa-heart-o ");
+            });
+        });
+    </script>
+
+    <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/jquery.mixitup/2.1.11/jquery.mixitup.min.js'></script>
+    <!--script buton hover-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+</body>
+
+
+</html>

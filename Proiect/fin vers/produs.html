@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, ,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <!-- Font Awesome CDN-->
+    <!--Sec car-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <!--Sec filter-->
+
+    <!--CustomStylesheet-->
+    <link rel="stylesheet" href="./main.css" />
+    <!---->
+
+    <!--footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    -->
+    <title>produse cu pagini</title>
+    <style>
+        .wrap {
+            background: rgb(221, 235, 233);
+            min-height: 100px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            vertical-align: middle;
+        }
+        
+        .search {
+            display: inline-flex;
+            text-align: center;
+        }
+        
+        .searchButton {
+            background-color: #4CAF50;
+            border-radius: 0%;
+            border: none;
+            color: white;
+            padding: 9px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            font-size: 13px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+        }
+        
+        .searchButton {
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .searchButton:hover {
+            background: rgb(97, 207, 100);
+            box-shadow: 0 22px 26px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        input,
+        button {
+            font-size: inherit;
+            padding: 0.2em;
+            margin: 0.1em 0.7em;
+        }
+        
+        input.searchTerm {
+            width: 350px;
+            height: 40px;
+        }
+        
+        .product-section {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        /* We tell all items to be 100% width, via flex-basis */
+        
+        .product-section>* {
+            flex: 1 100%;
+        }
+        /* We rely on source order for mobile-first approach
+ * in this case:
+ * 1. header
+ * 2. article
+ * 3. aside 1
+ * 4. aside 2
+ * 5. footer
+ */
+        /* Medium screens */
+        
+        @media all and (min-width: 600px) {
+            /* We tell both sidebars to share a row */
+            .aside {
+                flex: 1 auto;
+            }
+        }
+        /* Large screens */
+        
+        @media all and (min-width: 800px) {
+            /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+            .product-sort {
+                flex: 3 0px;
+            }
+            .aside-1 {
+                order: 1;
+                align-content: flex-start;
+                background: pink;
+            }
+            .product-sort {
+                order: 2;
+            }
+        }
+        
+        .product-place ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        /*style product card*/
+        
+        .user-card:hover {
+            box-shadow: 0 19px 19px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .wrapper {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            background-color: #fff;
+            color: #444;
+        }
+        
+        .box {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+        }
+        
+        .img {
+            height: auto;
+            max-height: 100px;
+            width: auto;
+            max-width: 100px;
+        }
+        
+        .wrapper>.user-card {
+            flex: 1 1 auto;
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div id="topBar" class="w3-bar w3-blue-gray ">
+            <a href="#" class="w3-bar-item w3-button w3-right "><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Your Cart</a>
+            <a href="signinPage.html" class="w3-bar-item w3-button w3-right"><i class="fa fa-fw fa-user"></i>  Login</a>
+            <a href="mainPage.html" class="w3-bar-item w3-button w3-right" class="active"><i class="fa fa-fw fa-home"></i>  Home</a>
+            <a src="#" alt="WatchesIcon" class="w3-bar-item w3-left" style="width:10px; height:10px left"> </a>
+
+    </header>
+
+    <div id="categoryBar" class="w3-bar w3-center w3-text-dark-grey">
+
+        <a href="#" id="categ" class="w3-bar-item w3-button  ">MEN'S</a>
+        <a href="#" id="categ" class="w3-bar-item w3-button  ">WOMEN'S</a>
+        <a href="#" id="categ" class="w3-bar-item w3-button ">SHOP BY BRAND</a>
+        <a href="#" id="categ" class="w3-bar-item w3-button ">ALL CATEGORIES</a>
+        <a href="#" id="categ" class="w3-bar-item w3-button ">SALE</a>
+
+    </div>
+    <!--  ======================= End Header Area ============================== -->
+    <!--Header search area-->
+    <div class="wrap ">
+        <div class="search">
+            <input type="text" id="search-box" class="form-control searchTerm " placeholder="What are you looking for? " />
+            <button type="submit" id="search-btn" class="btn btn-primary mb-2 searchButton">SEARCH</button>
+        </div>
+    </div>
+
+
+    <!--END Header search area-->
+    <!--filter section-->
+
+    <div class="row">
+        <div class="column">
+            <div class="container">
+                <br>
+
+                <aside class="filter-width" style="width:220px">
+                    <p>Filter </p>
+                    <div class="card">
+                        <article class="card-group-item">
+                            <header class="card-header">
+                                <h6 class="title">Range input </h6>
+                            </header>
+                            <div class="filter-content">
+                                <div class="card-body">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-3">
+                                            <label>Min</label>
+                                            <input type="number" class="form-control" id="inputEmail4" placeholder="$0">
+                                        </div>
+                                        <div class="form-group col-md-6 text-right">
+                                            <label>Max</label>
+                                            <input type="number" class="form-control" placeholder="$10,000">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card-body.// -->
+                                < </div>
+                        </article>
+                        <!-- card-group-item.//-->
+                        <article class="card-group-item">
+                            <header class="card-header">
+                                <h6 class="title">Selection </h6>
+                            </header>
+                            <div class="filter-content">
+                                <div class="card-body">
+                                    <div class="custom-control custom-checkbox">
+                                        <span class="float-right badge badge-light round">52</span>
+                                        <input type="checkbox" class="custom-control-input" id="Check1">
+                                        <label class="custom-control-label" for="Check1">Patek</label>
+                                    </div>
+                                    <!-- form-check.// -->
+                                    <div class="custom-control custom-checkbox">
+                                        <span class="float-right badge badge-light round">132</span>
+                                        <input type="checkbox" class="custom-control-input" id="Check2">
+                                        <label class="custom-control-label" for="Check2">Vacheron</label>
+                                    </div>
+                                    <!-- form-check.// -->
+
+                                    <div class="custom-control custom-checkbox">
+                                        <span class="float-right badge badge-light round">17</span>
+                                        <input type="checkbox" class="custom-control-input" id="Check3">
+                                        <label class="custom-control-label" for="Check3">Rolex</label>
+                                    </div>
+                                    <!-- form-check.// -->
+
+                                    <div class="custom-control custom-checkbox">
+                                        <span class="float-right badge badge-light round">7</span>
+                                        <input type="checkbox" class="custom-control-input" id="Check4">
+                                        <label class="custom-control-label" for="Check4">Louis Moinet</label>
+                                    </div>
+                                    <!-- form-check.// -->
+
+                                    <div class="custom-control custom-checkbox">
+                                        <span class="float-right badge badge-light round">7</span>
+                                        <input type="checkbox" class="custom-control-input" id="Check4">
+                                        <label class="custom-control-label" for="Check4">Hulbot</label>
+                                    </div>
+                                    <!-- form-check.// -->
+                                </div>
+                                <!-- card-body.// -->
+                            </div>
+                        </article>
+                        <!-- card-group-item.// -->
+                        </div>
+                        <!-- card.// -->
+
+
+
+                </aside>
+                <!-- col.// -->
+
+
+                </div>
+                <!--container end.//-->
+
+
+                <!--end filter section-->
+            </div>
+
+            <!--product area-->
+            <div class="column">
+                <div class="container">
+                    <div class="row" id="container"></div>
+
+                    <ul class="pagination" id="pagination"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!--  ===========END product Area================ -->
+
+        <!--Footer Line Button-->
+
+        <div class="line-footer">
+            <div class="row">
+                <h5>Start your 30-day free trial today. Cancel or upgrade anytime. </h5>
+                <div class="footer-bt-class">
+                    <button id="footer-button">BUTTON LABEL</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!--END Footer Line Button-->
+
+        <!-- Footer -->
+        <footer class="site-footer ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-6 ">
+                        <h6>About</h6>
+                        <p class="text-justify ">Watches.com Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure consectetur velit dolorem aut asperiores, accusamus nam cumque repellat nobis omnis temporibus corporis pariatur laudantium, distinctio odio magni veniam
+                            iusto tempore!
+                        </p>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3 ">
+                        <h6>INFO</h6>
+                        <ul class="footer-links ">
+                            <li><a href="# ">Team</a></li>
+                            <li><a href="# ">Jobs</a></li>
+                            <li><a href="# ">Blog</a></li>
+                            <li><a href="# ">Press</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3 ">
+                        <h6>HELP</h6>
+                        <ul class="footer-links ">
+                            <li><a href="# ">FAQ</a></li>
+                            <li><a href="# ">Security</a></li>
+                            <li><a href="# ">Terms of Service</a></li>
+                            <li><a href="# ">Privacy policy</a></li>
+                            <li><a href="# ">Android</a></li>
+                            <li><a href="# ">Templates</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <hr>
+
+            </div>
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-8 col-sm-6 col-xs-12 ">
+                        <p class="copyright-text "> &copy; 2020 The Website, Inc.
+
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 ">
+                        <ul class="social-icons ">
+                            <li><a class="facebook " href="https://www.facebook.com "><i class="fab fa-facebook-f "></i></a></li>
+                            <li><a class="youtube " href="https://www.youtube.com "><i class="fab fa-youtube "></i></a></li>
+                            <li><a class="twitter " href="https://twitter.com "><i class="fab fa-twitter "></i></a></li>
+                            <li><a class="instagram " href="https://www.instagram.com "><i class="fab fa-instagram "></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--ENd footer area-->
+
+        <!-- Slick carousel-->
+        <!-- <script type="text/javascript " src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script> -->
+        <!-- Custom Script-->
+        <script src="./productJS.js "></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+        <script src="http://kit.fontawesome.com/23412c6a8d.js "></script>
+
+        <!--Section filter-->
+        <!---->
+        <script type="text/javascript ">
+            $(document).ready(function() {
+                $(".wish-icon i ").click(function() {
+                    $(this).toggleClass("fa-heart fa-heart-o ");
+                });
+            });
+        </script>
+
+        <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+        <script src='https://cdn.jsdelivr.net/jquery.mixitup/2.1.11/jquery.mixitup.min.js'></script>
+</body>
+
+</html>
