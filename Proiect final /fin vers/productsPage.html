@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, ,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Font Awesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+
+    <!--CustomStylesheet-->
+    <link rel="stylesheet" href="./main.css" />
+    <!--footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./productPage.css" />
+    <link rel="stylesheet" href="./paginaDeProba.css" />
+
+    <title>Products Page</title>
+
+</head>
+
+<body>
+    <!--  ======================= Start Header Area ============================== -->
+    <header>
+        <div id="topBar" class="w3-bar w3-blue-gray ">
+            <div class="cart-btn">
+                <a href="#" class="w3-bar-item w3-button w3-right"> <span class="nav-icon"> <i class="fas fa-cart-plus"></i> <div class="cart-items">(0)</div> </span>
+                </a>
+            </div>
+            <a href="signinPage.html" class="w3-bar-item w3-button w3-right"><i class="fa fa-fw fa-user"></i> Login</a>
+            <a href="mainPage.html" class="w3-bar-item w3-button w3-right" class="active"><i
+                    class="fa fa-fw fa-home"></i> Home</a>
+            <a src="#" alt="WatchesIcon" class="w3-bar-item w3-left" style="width:10px; height:10px left"> </a>
+
+    </header>
+
+    <div id="categoryBar" class="w3-bar w3-center w3-text-dark-grey">
+
+        <a href="#" id="categ" class="w3-bar-item w3-button  ">MEN'S</a>
+        <a href="#" id="categ" class="w3-bar-item w3-button  ">WOMEN'S</a>
+
+        <div class="dropdown">
+            <a href="#" id="categ" class="w3-bar-item w3-button brand-shop dropbtn">SHOP BY BRAND</a>
+            <div class="dropdown-content">
+
+                <a href="#"><strong>HULBOT</strong></a>
+                <a href="#"><strong>PATEK</strong></a>
+                <a href="#"><strong>VACHERON</strong></a>
+                <a href="#"><strong>ROLEX</strong></a>
+
+            </div>
+        </div>
+        <a href="#" id="categ" class="w3-bar-item w3-button ">ALL CATEGORIES</a>
+        <a href="#" id="categ" class="w3-bar-item w3-button ">SALE</a>
+
+    </div>
+    <!--  ======================= End Header Area ============================== -->
+    <!--Header search area-->
+    <div class="wrap ">
+        <div class="search">
+            <input type="text" id="search-box" class="form-control searchTerm " placeholder="What are you looking for? " />
+            <button type="submit" id="search-btn" class="btn btn-primary mb-2 searchButton">SEARCH</button>
+        </div>
+    </div>
+    </br>
+    <!-- ==================Product Area=================    -->
+    <div class="container product-sect">
+        <div class="row" id="container"></div>
+
+        <ul class="pagination " id="pagination"></ul>
+    </div>
+    <!--  ===========END product Area================ -->
+    <!--cart area-->
+    <!-- products -->
+    <section class="products">
+        <div class="section-title">
+        </div>
+        <div class="products-center">
+        </div>
+    </section>
+    <!-- end of products -->
+    <!-- cart -->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart"><i class="fa fa-window-close-o" aria-hidden="true"></i></span>
+            <h2>Your Cart</h2>
+            <div class="cart-content">
+            </div>
+            <div class="cart-footer">
+                <h3>your total : $<span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">clear cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!--end cart area-->
+    <!--Footer Line Button-->
+    <section>
+        <div class="line-footer ">
+            <div class="row ">
+                <h5>Start your 30-day free trial today. Cancel or upgrade anytime. </h5>
+                <div class="footer-bt-class ">
+                    <button id="footer-button " class="searchButton ">BUTTON LABEL</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--END Footer Line Button-->
+
+    <!-- Footer -->
+    <footer class="site-footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-12 col-md-6 ">
+                    <h6>About</h6>
+                    <p class="text-justify ">Watches.com Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure consectetur velit dolorem aut asperiores, accusamus nam cumque repellat nobis omnis temporibus corporis pariatur laudantium, distinctio odio magni veniam iusto
+                        tempore!
+                    </p>
+                </div>
+
+                <div class="col-xs-6 col-md-3 ">
+                    <h6>INFO</h6>
+                    <ul class="footer-links ">
+                        <li><a href="# ">Team</a></li>
+                        <li><a href="# ">Jobs</a></li>
+                        <li><a href="# ">Blog</a></li>
+                        <li><a href="# ">Press</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3 ">
+                    <h6>HELP</h6>
+                    <ul class="footer-links ">
+                        <li><a href="# ">FAQ</a></li>
+                        <li><a href="# ">Security</a></li>
+                        <li><a href="# ">Terms of Service</a></li>
+                        <li><a href="# ">Privacy policy</a></li>
+                        <li><a href="# ">Android</a></li>
+                        <li><a href="# ">Templates</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+
+        </div>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-8 col-sm-6 col-xs-12 ">
+                    <p class="copyright-text "> &copy; 2020 The Website, Inc.
+
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 ">
+                    <ul class="social-icons ">
+                        <li><a class="facebook " href="https://www.facebook.com "><i class="fab fa-facebook-f "></i></a>
+                        </li>
+                        <li><a class="youtube " href="https://www.youtube.com "><i class="fab fa-youtube "></i></a></li>
+                        <li><a class="twitter " href="https://twitter.com "><i class="fab fa-twitter "></i></a></li>
+                        <li><a class="instagram " href="https://www.instagram.com "><i
+                                    class="fab fa-instagram "></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--ENd footer area-->
+    <!-- Custom Script-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script src="http://kit.fontawesome.com/23412c6a8d.js "></script>
+    <script type="text/javascript ">
+        $(document).ready(function() {
+            $(".wish-icon i ").click(function() {
+                $(this).toggleClass("fa-heart fa-heart-o ");
+            });
+        });
+    </script>
+    <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/jquery.mixitup/2.1.11/jquery.mixitup.min.js'></script>
+    <!--script buton hover-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./productPage.js "></script>
+    <script src="./signinPage.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, ,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <!-- Font Awesome CDN-->
+    <!--Sec car-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <!--Sec filter-->
+
+    <!--CustomStylesheet-->
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./detailProduct.css" />
+    <!--footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Detail Product</title>
+
+</head>
+
+<body>
+    <!--  ======================= Start Header Area ============================== -->
+    <header>
+        <div id="topBar" class="w3-bar w3-blue-gray ">
+            <div class="cart-btn">
+                <a href="#" class="w3-bar-item w3-button w3-right"> <span class="nav-icon"> <i
+                            class="fas fa-cart-plus"></i>
+                        <div class="cart-items">(0)</div>
+                    </span>
+                </a>
+            </div>
+            <a href="signinPage.html" class="w3-bar-item w3-button w3-right"><i class="fa fa-fw fa-user"></i> Login</a>
+            <a href="mainPage.html" class="w3-bar-item w3-button w3-right" class="active"><i
+                    class="fa fa-fw fa-home"></i> Home</a>
+            <a src="#" alt="WatchesIcon" class="w3-bar-item w3-left" style="width:10px; height:10px left"> </a>
+
+    </header>
+
+    <div id="categoryBar" class="w3-bar w3-center w3-text-dark-grey">
+
+        <a href="productsPage.html" id="categ" class="w3-bar-item w3-button  ">MEN'S</a>
+        <a href="#" id="categ" class="w3-bar-item w3-button  ">WOMEN'S</a>
+        <div class="dropdown">
+            <a href="productsPage.html" id="categ" class="w3-bar-item w3-button brand-shop dropbtn">SHOP BY BRAND</a>
+            <div class="dropdown-content">
+
+                <a href="#"><strong>HULBOT</strong></a>
+                <a href="#"><strong>PATEK</strong></a>
+                <a href="#"><strong>VACHERON</strong></a>
+                <a href="#"><strong>ROLEX</strong></a>
+
+            </div>
+        </div> <a href="#" id="categ" class="w3-bar-item w3-button ">ALL CATEGORIES</a>
+        <a href="#" id="categ" class="w3-bar-item w3-button ">SALE</a>
+
+    </div>
+    <!-- ======================= End Header Area ============================== -->
+    <!--Detail product-->
+
+    <main>
+        <hr>
+        <div class="container">
+
+
+            <div class="grid product">
+                <div class="column-xs-12 column-md-7">
+                    <div class="product-gallery">
+                        <div class="product-image">
+                            <img class="active" src="./assets/detail5.jpeg">
+                        </div>
+                        <ul class="image-list">
+                            <li class="image-item"><img src="./assets/detail2.jpg"></li>
+                            <li class="image-item"><img src="./assets/detail3.jpg"></li>
+                            <li class="image-item"><img src="./assets/detail4.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="column-xs-12 column-md-5">
+                    <h2 class="desc-pr">EMPORIO ARMANI</h2>
+                    <h3 class="desc-pr">$1998.99</h3>
+                    </br>
+                    <a href="#" class="btn btn-primary button1 shop-item-button searchButton desc-pr" style="background: rgb(137, 196, 50)"><strong class="text">ADD TO CART</strong>
+                    </a>
+                    <div class="description">
+                        </br>
+                        <p class="desc-pr" style="align-self: center; font-size: 24px; color:rgb(53, 98, 124)">
+                            Description</p>
+                        <hr>
+                        <p>Each California Watch is individually numbered and part of a limited edition of 1850 - the year California became a state.</p>
+                        <p>A land of extremes, the Mojave Desert has flat basins below sea level and mountain peaks over 10,000 feet. The Mojave collection has dimensional indices rising up out of the dial and a day/date window. Several models feature a
+                            smoked transparent dial feature a smoked transparent dial, allowing you to see the inner workings of the watch. Built-in quick release springbar system allows you to effortlessly swap out straps if you want to change up your
+                            look.
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+    </main>
+
+    <!--END Detail product-->
+    <!--carousel-->
+    <!-- ===============Trending products =================== -->
+    <div class="back-car">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="trendingText">Special <b>Prices</b></h2>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/fin vers/assets/ceas1.jpeg" class="img-responsive img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Emporio Armani</h4>
+                                                <p class="item-price"><strike>$294.00</strike> <span>$147.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/fin vers/assets/ceas2.jpeg" class="img-responsive img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Fossil</h4>
+                                                <p class="item-price"><strike>$117.00</strike> <span>$64.99</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/fin vers/assets/ceas3.jpeg" class="img-responsive img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Tissot</h4>
+                                                <p class="item-price"><strike>$496.00</strike> <span>$333.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/fin vers/assets/ceas4.jpeg" class="img-responsive img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Tissot</h4>
+                                                <p class="item-price"><strike>$519.00</strike> <span>$307.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/fin vers/assets/ceas5.jpeg" class="img-responsive img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Tissot</h4>
+                                                <p class="item-price"><strike>$369.00</strike> <span>$199.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/fin vers/assets/ceas6.jpeg" class="img-responsive img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Tag Heuer</h4>
+                                                <p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/fin vers/assets/ceas7.jpeg" class="img-responsive img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Citizen</h4>
+                                                <p class="item-price"><strike>$677.00</strike> <span>$325.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/fin vers/assets/ceas8.jpeg" class="img-responsive img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Omega</h4>
+                                                <p class="item-price"><strike>$599.00</strike> <span>$469.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/fin vers/assets/ceas9.jpeg" class="img-responsive img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Armani Exchange</h4>
+                                                <p class="item-price"><strike>$369.00</strike> <span>$149.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/fin vers/assets/ceas10.jpeg" class="img-responsive img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Fossil</h4>
+                                                <p class="item-price"><strike>$115.00</strike> <span>$50.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/fin vers/assets/ceas11.jpeg" class="img-responsive img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Raymond Weil</h4>
+                                                <p class="item-price"><strike>$150.00</strike> <span>$98.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                            <div class="img-box">
+                                                <img src="/fin vers/assets/ceas12.jpeg" class="img-responsive img-fluid" alt="">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <h4>Tissot</h4>
+                                                <p class="item-price"><strike>$250.00</strike> <span>$130.00</span></p>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#" class="btn btn-primary">Add to Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end carousel-->
+    <!--Footer Line Button-->
+    <section>
+        <div class="line-footer ">
+            <div class="row ">
+                <h5>Start your 30-day free trial today. Cancel or upgrade anytime. </h5>
+                <div class="footer-bt-class">
+                    <button id="footer-button" class="searchButton">BUTTON LABEL</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!--END Footer Line Button-->
+
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">Watches.com Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure consectetur velit dolorem aut asperiores, accusamus nam cumque repellat nobis omnis temporibus corporis pariatur laudantium, distinctio odio magni veniam iusto
+                        tempore!
+                    </p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>INFO</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>HELP</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Android</a></li>
+                        <li><a href="#">Templates</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text"> &copy; 2020 The Website, Inc.
+
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li><a class="youtube" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+                        <li><a class="twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="instagram" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--ENd footer area-->
+    <!-- Slick carousel-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://kit.fontawesome.com/23412c6a8d.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".wish-icon i").click(function() {
+                $(this).toggleClass("fa-heart fa-heart-o");
+            });
+        });
+    </script>
+    <script src="./signinPage.js"></script>
+    <script src="./detailProduct.js"></script>
+
+</body>
+
+</html>
