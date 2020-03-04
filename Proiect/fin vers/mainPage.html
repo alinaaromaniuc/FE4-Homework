@@ -10,30 +10,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-
-    <!-- Font Awesome CDN-->
     <!--Sec car-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
     <!--CustomStylesheet-->
     <link rel="stylesheet" href="./main.css" />
-    <!---->
-
     <!--footer-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    -->
     <link href=" https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <title>Var proiect</title>
+    <link rel="stylesheet" href="productPage.css" />
+    <title>Main Page</title>
 </head>
 
 <body>
     <!--  ======================= Start Header Area ============================== -->
     <header>
         <div id="topBar" class="w3-bar w3-blue-gray ">
-            <a href="#" class="w3-bar-item w3-button w3-right "><i class="fa fa-shopping-cart" aria-hidden="true"></i>  Your Cart</a>
-            <a href="signinPage.html" class="w3-bar-item w3-button w3-right"><i class="fa fa-fw fa-user"></i>  Login</a>
-            <a href="mainPage.html" class="w3-bar-item w3-button w3-right" class="active"><i class="fa fa-fw fa-home"></i>  Home</a>
+            <div class="cart-btn">
+                <a href="#" class="w3-bar-item w3-button w3-right"> <span class="nav-icon"> <i class="fas fa-cart-plus"></i> <div class="cart-items">0</div> </span>
+                </a>
+            </div>
+            <a href="signinPage.html" class="w3-bar-item w3-button w3-right"><i class="fa fa-fw fa-user"></i> Login</a>
+            <a href="mainPage.html" class="w3-bar-item w3-button w3-right" class="active"><i
+                    class="fa fa-fw fa-home"></i> Home</a>
             <a src="#" alt="WatchesIcon" class="w3-bar-item w3-left" style="width:10px; height:10px left"> </a>
 
     </header>
@@ -57,16 +56,16 @@
 
     </div>
     <!--  ======================= End Header Area ============================== -->
-    <!-- ============================ Container Area =========================================-->
+    <!-- ============================ VideoArea =========================================-->
     <div class="video-form-search">
         <video class="hidden-xs hidden-sm hidden-md hidden-custom videosize embed-responsive-item" autoplay="autoplay" loop="loop" poster="./assets/videoWatch.mp4" id="bgvid" playsinline autoplay muted loop>
-    </video>
+        </video>
         <div class="form-group has-search">
             <span class="fa fa-search form-control-feedback"></span>
             <input id="searchbar" type="button" class="form-control" value=" Search trough 472,554 watches from 105 countries.. " onclick="clickedButton()">
         </div>
     </div>
-    <!-- ============================ End Container Area ======================================-->
+    <!-- ============================ End Video Area ======================================-->
     <!-- ===============Trending products =================== -->
     <div class="container">
         <div class="row">
@@ -379,110 +378,84 @@
     <!-- End Promotion Area-->
 
 
-    <!--footer card-->
-    </br>
-    </br>
-    <div class="container about">
-        <h2>About us</h2>
-    </div>
-    <div class="container sec-container flex-container">
-        <div class="row text-center">
-            <div class="col-md-3  text-card ">
-                <div class="product-top ">
-                    <a href="https://en.wikipedia.org/wiki/History_of_watches"> <img src="assets/hist1.jpg" height="200px" width="200px" vspace="5" hspace="5"></a>
-                </div>
-                <div class="product-bottom text-center">
-                    <h6>About us</h6>
-                    <h5>We make sure that you reach your market</h5>
-                </div>
-            </div>
-
-            <div class="col-md-3  text-card ">
-                <div class="product-top ">
-                    <a href="https://en.wikipedia.org/wiki/History_of_watches"><img src="assets/hist2.jpg" height="200px" width="200px" vspace="5" hspace="5"></a>
-                </div>
-                <div class="product-bottom text-center">
-                    <h6>Our Strategy</h6>
-                    <h5>We make sure that you reach your market</h5>
-
-                </div>
-            </div>
-            <div class="col-md-3 text-card ">
-                <div class="product-top ">
-                    <a href="https://en.wikipedia.org/wiki/History_of_watches"> <img src="assets/hist3.jpg" height="200px" width="200px" vspace="5" hspace="5"></a>
-                </div>
-                <div class="product-bottom text-center">
-                    <h6>Targets Audiences</h6>
-                    <h5>We make sure that you reach your market.</h5>
-
-                </div>
-            </div>
-            <div class="col-md-3   text-card ">
-                <div class="product-top">
-                    <a href="https://en.wikipedia.org/wiki/History_of_watches"><img src="assets/hist4.jpg" height="200px" width="200px" vspace="5" hspace="5"></a>
-                </div>
-                <div class="product-bottom text-center">
-                    <h6>How to join our team</h6>
-                    <h5>We make sure that you reach your market.</h5>
-
-                </div>
-            </div>
-            <div class="col-md-3  text-card ">
-                <div class="product-top ">
-                    <a href="https://en.wikipedia.org/wiki/History_of_watches"> <img src="assets/hist5.jpg" height="200px" width="200px" vspace="5" hspace="5"></a>
-                </div>
-                <div class="product-bottom text-center">
-                    <h6>Terms of Services</h6>
-                    <h5>We make sure that you reach your market.</h5>
-
-                </div>
-            </div>
-            <div class="col-md-3  text-card ">
-                <div class="product-top ">
-                    <a href="https://en.wikipedia.org/wiki/History_of_watches"><img src="assets/hist6.jpg" height="200px" width="200px" vspace="5" hspace="5"></a>
-                </div>
-                <div class="product-bottom text-center">
-                    <h6>Preffered by many</h6>
-                    <h5>Clients worldwide prefer our Marketplace.</h5>
-
-                </div>
-            </div>
-            <div class="col-md-3  text-card ">
-                <div class="product-top ">
-                    <a href="https://en.wikipedia.org/wiki/History_of_watches"><img src="assets/hist7.jpg" height="200px" width="200px" vspace="5" hspace="5"></a>
-                </div>
-                <div class="product-bottom text-center">
-                    <h6>Values Clients</h6>
-                    <h5>We understand and value your demands.</h5>
-
-                </div>
-            </div>
-            <div class="col-md-3  text-card ">
-                <div class="product-top ">
-                    <a href="https://en.wikipedia.org/wiki/History_of_watches"> <img src="assets/hist1.jpg" height="200px" width="200px" vspace="5" hspace="5"></a>
-                </div>
-                <div class="product-bottom text-center">
-                    <h6>Premium Services</h6>
-                    <h5>We provide only the best side designs.</h5>
-
-                </div>
-            </div>
+    <!-- About Us section -->
+    <section class="products">
+        <div class="section-title">
+            <h2>ABOUT US</h2>
         </div>
+        <div class="products-center">
+            <!-- single product -->
+            <article class="product">
+                <div class="img-container1">
+                    <a href="#"><img src="./assets/a2.jpg" alt="product" class="product-img1" /></a>
+                </div>
+                <h3>We make sure that you reach your market</h3>
 
-    </div>
+            </article>
+            <article class="product">
+                <div class="img-container1">
+                    <img src="./assets/hist1.jpg" alt="product" class="product-img1" />
+
+                </div>
+                <h3>We provide only the best side designs.</h3>
+
+            </article>
+            <article class="product">
+                <div class="img-container1">
+                    <img src="./assets/hist2.jpg" alt="product" class="product-img1" />
+
+                </div>
+                <h3>We understand and value your demands.</h3>
+
+            </article>
+            <article class="product">
+                <div class="img-container1">
+                    <img src="./assets/hist3.jpg" alt="product" class="product-img1" />
+
+                </div>
+                <h3>Clients worldwide prefer our Marketplace.</h3>
+
+            </article>
+            <article class="product">
+                <div class="img-container1">
+                    <img src="./assets/hist4.jpg" alt="product" class="product-img1" />
+
+                </div>
+                <h3>We make sure that you reach your market</h3>
+
+            </article>
+            <article class="product">
+                <div class="img-container1">
+                    <img src="./assets/a3.jpg" alt="product" class="product-img1" />
+
+                </div>
+                <h3>We make sure that you reach your market</h3>
+
+            </article>
+            <article class="product">
+                <div class="img-container1">
+                    <img src="assets/hist6.jpg" alt="product" class="product-img1" />
+
+                </div>
+                <h3>We make sure that you reach your market</h3>
+
+            </article>
+            <article class="product">
+                <div class="img-container1">
+                    <img src="assets/hist7.jpg" alt="product" class="product-img1" />
+
+                </div>
+                <h3>We make sure that you reach your market</h3>
+
+            </article>
+
+        </div>
+    </section>
+
+    <!-- END About Us section -->
 
 
 
-    <!-- END footer card-->
-
-
-
-
-
-    <!--Section second carousel-->
-
-
-    <!--End Section secound carousel-->
     <!--  ===========END Trending Area================ -->
     <!--Footer Line Button-->
     <div class="line-footer">
@@ -493,13 +466,7 @@
             </div>
         </div>
     </div>
-
-
-
     <!--END Footer Line Button-->
-
-
-
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
@@ -546,45 +513,44 @@
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <ul class="social-icons">
-                        <li><a class="facebook" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="facebook" href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        </li>
                         <li><a class="youtube" href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
                         <li><a class="twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
-                        <li><a class="instagram" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="instagram" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
     <!--ENd footer area-->
-
     <!-- Slick carousel-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Custom Script-->
-    <script src="fin.js"></script>
+    <script src="signinPage.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="http://kit.fontawesome.com/23412c6a8d.js"></script>
 
     <!---->
-    <script type="text/javascript">
+
+    <script type="text/javascript" language="JavaScript">
+        function clickedButton() {
+            window.location = 'productsPage.html'
+        }
+    </script>
+    <script src="fin.js"></script>
+    <!--heart-->
+    <script>
         $(document).ready(function() {
             $(".wish-icon i").click(function() {
                 $(this).toggleClass("fa-heart fa-heart-o");
             });
         });
     </script>
-    <script type="text/javascript" language="JavaScript">
-        function clickedButton() {
-
-            window.location = 'productsPage.html'
-
-        }
-    </script>
-
-
-
-
+    <script src="productPage.js"></script>
 
 </body>
 
