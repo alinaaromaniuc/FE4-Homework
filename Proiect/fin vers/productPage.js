@@ -1,3 +1,8 @@
+//mainPage
+function clickedButton() {
+    window.location = 'productsPage.html'
+}
+
 //search
 var allWatches = [];
 var backupWatches = [];

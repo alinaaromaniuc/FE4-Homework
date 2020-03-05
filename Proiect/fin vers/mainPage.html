@@ -61,9 +61,18 @@
         <video class="hidden-xs hidden-sm hidden-md hidden-custom videosize embed-responsive-item" autoplay="autoplay" loop="loop" poster="./assets/videoWatch.mp4" id="bgvid" playsinline autoplay muted loop>
         </video>
         <div class="form-group has-search">
+            <div class="search">
+                <input type="text" id="search-box" class="form-control searchTerm " placeholder="Search trough 472,554 watches... " />
+                <button type="submit" id="search-btn" class="btn btn-primary mb-2 searchButton" onclick="clickedButton()">SEARCH</button>
+            </div>
+        </div>
+
+        <!--
+        <div class="form-group has-search">
             <span class="fa fa-search form-control-feedback"></span>
             <input id="searchbar" type="button" class="form-control" value=" Search trough 472,554 watches from 105 countries.. " onclick="clickedButton()">
         </div>
+    -->
     </div>
     <!-- ============================ End Video Area ======================================-->
     <!-- ===============Trending products =================== -->
@@ -534,14 +543,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="http://kit.fontawesome.com/23412c6a8d.js"></script>
 
-    <!---->
-
-    <script type="text/javascript" language="JavaScript">
-        function clickedButton() {
-            window.location = 'productsPage.html'
-        }
-    </script>
-    <script src="fin.js"></script>
     <!--heart-->
     <script>
         $(document).ready(function() {
