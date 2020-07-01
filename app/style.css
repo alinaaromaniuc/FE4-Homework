@@ -1,0 +1,30 @@
+﻿/*styling.css*/
+
+
+/*add font family, background image*/
+
+body {
+    background: url() center center fixed;
+    background-image: url('https://www.desktopbackground.org/download/o/2013/08/01/616265_blue-grey-gradients-iphone-hd-wallpaper-iphone-hd-wallpapers_640x960_h.jpg');
+    background-size: cover;
+    background-image: no-repeat;
+    color: #fff;
+    font-family: Arvo, serif;
+}
+
+
+/*map*/
+
+#googleMap {
+    height: 400px;
+    width: 100%;
+}
+
+
+/*output box*/
+
+#output {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px auto;
+}
